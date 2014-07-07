@@ -1,0 +1,46 @@
+* {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	font-smoothing: antialiased;
+}
+
+html {
+	font-family: "brandon-grotesque";
+}
+
+
+.container {
+	padding:90px 0;
+	text-align: center;
+}
+
+.active {
+	background: #f6833e;
+}
+
+.hovering {
+	background: #eee;
+}
+
+form {
+	border:1px dotted black;
+	max-width: 700px;
+	margin:0 auto;
+
+}
+
+form > div {
+	padding:20px;
+}
+
+.centered {
+	text-align: center;
+}
+
+#q {
+	width: 400px;
+}
+
+label {
+	padding-right:10px;
+}
