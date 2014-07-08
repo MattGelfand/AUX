@@ -20,8 +20,8 @@ $(document).ready(function() {
 			if(count > 0) {
 				$.each(addrbook, function(i, obj) {
 					$('#ouput').append('<p>' + obj.name + ', <a href="mailto:' + obj.email + '">' + obj.email + '</a></p>').hide().fadeIn();
-				});
-			}
+				}); // end each
+			} // end count check
 
 			}).error(function() {
 				alert('there was an Ajax error');

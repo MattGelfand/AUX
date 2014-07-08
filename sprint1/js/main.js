@@ -17,6 +17,7 @@ function ajaxCall(dataURL, outputElement, callback) {
     var request = getHTTPObject();
     outputElement.innerHTML = "Loading...";
 
+//check to see if ajax call went through
     request.onreadystatechange = function() {
         setTimeout(function(){
             if(request.readyState === 4 && request.status === 200) {
@@ -43,11 +44,12 @@ function ajaxCall(dataURL, outputElement, callback) {
 var searchForm = document.getElementById('search-form');
 var searchField = document.getElementById('q');
 var getAllButton = document.getElementById('get-all');
-var target = document.getElementById('output');
+var $target = $("#output");
 
 var adr = {
     search : function(event) {
         var output = document.getElementById('output');
+        //start ajax call
         ajaxCall('data/contacts.json', output, function (data) {
 
             adr.hasCompletedLoading = true;
@@ -59,23 +61,21 @@ var adr = {
 
             event.preventDefault();
 
-            target.innerHTML = " ";
+            $target.empty();
             var htmlToWrite = "";
             if(count > 0 && searchValue !== "") {
                 htmlToWrite = "";
-                for(i = 0; i < count; i = i + 1) {
-
-                    obj = addrBook[i],
-
+                $.each(addrbook, function(i, obj) {  
                     lowercaseName = obj.name.toLowerCase(),
+                    // search through contact list on user keystroke
                     isitFound = lowercaseName.indexOf(searchValue);
-
+                    // if it's not -1, then it's found some results and will output them #output
                     if(isitFound !== -1) {
                         htmlToWrite += '<p>' + obj.name + ', <a href="mailto:' + obj.email + '">' + obj.email +'</a></p>';
-                    } // end if
-                } // end for loop
-            } // end count stack
-            target.innerHTML = htmlToWrite;
+                    } // end Found if 
+                } // end each loop
+            } // end count if 
+            $target.append(htmlToWrite).hide().fadeIn();
         }); // end ajax call
     }, 
     getAllContacts : function () {
@@ -108,7 +108,10 @@ var adr = {
     hasCompletedLoading : false
 } // end adr object
 
-searchField.addEventListener('keyup', adr.search, false);
+//searchField.addEventListener('keyup', adr.search, false);
+$('#q').keyup(function(event) {
+    adr.search(event);
+});
 searchField.addEventListener('focus', adr.setActiveSelection, false);
 searchField.addEventListener('blur', adr.removeActiveSelection, false);
 getAllButton.addEventListener('click', adr.getAllContacts, false);
