@@ -1,27 +1,28 @@
-"addressbook" : [
+{
+"addressBook" : [
 		{
 		"name": "Richard",
-		"email": "richard@freshtilledsoil.com",
+		"email": "richard@freshtilledsoil.com"
 		},
 
 		{
 		"name": "Kelly",
-		"email": "kelly@freshtilledsoil.com",
+		"email": "kelly@freshtilledsoil.com"
 		},
 
 		{
 		"name": "Mark",
-		"email": "mark.grambau@freshtilledsoil.com",
+		"email": "mark.grambau@freshtilledsoil.com"
 		},
 
 		{
 		"name": "Mike",
-		"email": "michael.connors@freshtilledsoil.com",
+		"email": "michael.connors@freshtilledsoil.com"
 		},
 
 		{
 		"name": "Sarah",
-		"email": "sarah@freshtilledsoil.com",
-		}	
+		"email": "sarah@freshtilledsoil.com"
+		}
 	]
 }
