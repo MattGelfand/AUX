@@ -1,0 +1,157 @@
+/* {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	font-smoothing: antialiased;
+}
+
+html {
+	font-family: "freight-micro-pro";
+	background:url('../img/thumb.png') center center no-repeat;
+	background-size: 90%;
+	background-position: -150px 140px;
+}
+
+body {
+	position: relative;
+	background:rgba(59,89,152,.9);
+	height: 1000px;
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	max-width: 1200px;
+	margin:0 auto;
+	padding-top:40px;
+}
+
+.main-head {
+	color:#fafafa;
+	text-align: center;
+	margin:0 auto;
+}
+
+.main-head h1 {
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin:0 auto;
+}
+
+.main-head h3 {
+	font-size: 15px;
+	margin:0 auto;
+}
+
+#form {
+	-webkit-appearance: none;
+	text-align: center;
+}
+
+#news {
+	width:600px;
+	height: 40px;
+	font-size:30px;
+	position: relative;
+	top: 47px;
+	left: 217px;
+}
+
+::-webkit-input-placeholder { 
+    color: #e5e5e5;
+}
+
+#button-div {
+	position: relative;
+	top: 100px;
+}
+
+#button {
+	padding:20px 50px;
+	border: 3px solid #fafafa;
+	color:#fafafa;
+	font-weight: bolder;
+	margin:0 auto;
+	text-decoration:none;
+}
+
+#button:hover {
+	background:#fafafa;
+	color:rgba(0,0,255,.5);
+}
+
+#button:active {
+	background: #d4d4d4;
+}	
+
+#results {
+	margin:0 auto;
+	position: relative;
+	top:50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#results > div {
+	display:inline-block;
+    width: 300px;
+    vertical-align:top;
+    margin:0 auto;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+#results li {
+	padding:20px 0;
+	margin:0;
+	list-style-type: none;
+	color:#fafafa;
+}
+
+#results li:first-child {
+	text-decoration: underline;	
+}
+
+#results li:nth-child(6) {
+	font-weight: bold;
+}
+
+
+.social-buttons {
+	position: relative;
+	top: 30px;
+	max-width: 600px;
+	margin:0 auto;
+}
+
+.social-buttons img {
+	margin: 10px;
+}
+
+.circle {
+	float: right;
+}
+.circle:active {
+	opacity: .5;
+}
+
+.circle:visited {
+	opacity: .5;
+}
+
+p {
+	margin: 0;
+	padding:0;
+	float: left;
+	line-height: 50px;
+	font-weight: bolder;
+}
+
+ jS 
+.show_hide {
+	display:none;
+}
+
+

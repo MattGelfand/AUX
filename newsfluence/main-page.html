@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AUX Design Challenge 1</title>
+	<link rel='stylesheet' href='css/main-page.css' />
+</head>
+<body>
+ 
+		<a href="index.html">home</a>
+		<a href="bbc.html">bbc</a>
+
+<div id="wrapper">
+	<section class="main-head">
+		<h1>The moment of truth...</h1>
+			<div class="social-buttons">
+			<p>Click icons to sign in:</p>	
+			<a href="#" class="circle"><img src="img/facebook.png" height='30px;' width='30px;' /></a>
+			<a href="#" class="circle"><img src="img/twitter.png" height='30px;' width='30px;'/></a>
+			<a href="#" class="circle"><img src="img/linkedin.png" height='30px;' width='30px;'/></a>
+		</div>
+		<form id="form">
+		  <input type="text" id="news" placeholder="Paste URL here">
+		</form>
+
+		<div id="button-div">
+			<a id="button" class="show_hide" href="#">Evaluate</a>
+				<section id="results" class="slidingDiv">
+					<div class="col">
+						<ul>
+							<li>Platform:</li>
+							<li>Shared?</li>
+							<li>Time</li>
+							<li>Day</li>
+							<li>Mood</li>
+							<li>Probability</li>
+						</ul>
+					</div>
+				    <div class="col">
+				    	<ul>
+				    		<li>Facebook</li>	
+							<li>Yes(1)</li>
+							<li>1 Hour Late</li>
+							<li>2 days early</li>
+							<li>Sad</li>
+							<li>34%</li>
+							<li><button>still post?</button></li>
+						</ul>
+				    </div>
+				    <div class="col">
+				   		<ul>
+				   			<li>Twitter</li>
+							<li>No</li>
+							<li>2 Hours Early</li>
+							<li>Correct Day</li>
+							<li>Happy</li>
+							<li>93%</li>
+							<li><button>still post?</button></li>
+						</ul>
+				    </div>  
+			</section>
+		</div>
+	</section>
+</div><!--end wrapper-->	
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>

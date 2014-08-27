@@ -1,0 +1,70 @@
+* {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	font-smoothing: antialiased;
+}
+
+html {
+	
+}
+
+body {
+	
+	background:rgba(59,89,152,.9);
+	height: 100vh;
+	margin:0;
+	padding:0;
+}
+
+.info {
+	font-family: "proxima-nova";
+	margin: 0 auto;
+	width: 800px;
+	position: relative;
+	top: 20px;
+	border:8px solid #fafafa;
+	border-radius: 5px;
+}
+
+.info h1{
+	font-family: "freight-micro-pro";
+	color:#fafafa;
+	font-size: 80px;
+	margin:0 auto;
+}
+
+.info p, li {
+	color: #fafafa;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+li {
+	background-image:url('../img/checkmark.png');
+	background-repeat: no-repeat;
+	background-size: 5%;
+	background-position: 15px 15px;
+	padding:20px 60px;
+	list-style-type: none;
+
+}
+
+.padding {
+	padding:0 15px 15px 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #fafafa;
+	font-weight: bolder;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
