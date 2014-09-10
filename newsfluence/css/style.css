@@ -5,11 +5,9 @@
 }
 
 html {
-	background:url('../img/thumb.png') center center no-repeat;
-	background-size: 50%;
-	background-position: 50% 20%;
+  background:url('../img/background.jpg') no-repeat;
+  background-position: 63% 23%;
 }
-
 
 
 
@@ -44,7 +42,6 @@ html {
 
 body {
 	font-size: 100%;
-	position: relative;
 	margin:0;
 	padding: 0;
 	font-family: "prenton", sans-serif;
@@ -84,35 +81,48 @@ h1,h2,h3,h4,h5,h6 {
 
 /*===================================== MOBILE STYLES ======================================*/
 
+.status-bar {
+  background: black;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .sign-in {
 	width: 15rem;
 	margin: 0 auto;
 	text-align: center;
+  margin-top: 4rem;
 }
 
 .home-head {
-	color: rgba(59,89,152,.9);
+	color:#fff;
 	text-transform: uppercase;
-	margin: 12.5rem 0 0 0;
+  margin: 2rem 0 .5rem 0;
 }
 
 .tagline {
-	color: rgba(59,89,152,.9);
-	font-size: 1rem;
+	color:#fff;
+	font-size: .8rem;
 	font-weight: lighter;
-	line-height: 1.5;
-	margin-bottom: 3.3rem;
+
+	margin-bottom: 4.5rem;
+  text-transform: uppercase;
 }
 
 .sign-in-btn {
 	background: rgba(59,89,152,.9);
 	color: #fff;
-	padding: 2rem;
+	padding: 1.4rem;
 	text-decoration: none;
-	font-size: 1.2rem;
-	border-radius: 1%;
+	font-size: 1.1em;
+	border-radius: 5px;
+  text-transform: uppercase;
 }
 
+.logo {
+  height: 100px;
+}
 
 /*===================================== MEDIA QUERIES ======================================*/
 
@@ -125,7 +135,11 @@ h1,h2,h3,h4,h5,h6 {
 /* Medium screen breakpoint (640px) */
 @media (min-width: 40rem) { 
   html { 
+    background-position: 80% 23%;
+  }
 
+  .status-bar {
+    display: none;
   }
 
 .column {
